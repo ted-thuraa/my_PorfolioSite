@@ -1,0 +1,16 @@
+.showcase {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-color: #0A0A0A;
+    .showcase-bg {
+        .showcase-inner {
+            display: block;
+            height: 100vh;
+            align-content: center;
+            img {
+                object-fit: cover;
+            }
+        }
+    }
+}

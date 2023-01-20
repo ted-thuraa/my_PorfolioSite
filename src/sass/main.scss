@@ -1,0 +1,24 @@
+@forward "base/global";
+@forward "components/header";
+@forward "components/banner";
+@forward "components/about";
+@forward "components/slider";
+@forward "components/timelineHeader";
+@forward "components/timeline";
+@forward "components/showcase";
+@forward "components/testimonial";
+@forward "components/faq";
+@forward "components/cta";
+@forward "components/footer";
+@forward "components/sidebar";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    @media (max-width: 478px) {
+        width: 805px;
+    }
+}

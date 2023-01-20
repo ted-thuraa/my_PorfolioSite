@@ -1,0 +1,86 @@
+.footer {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: black;
+    .footer-container {
+        display: block;
+        width: 90%;
+        max-width: 1360px;
+        margin-right: auto;
+        margin-left: auto;
+        position: static;
+        .footer-wrapper {
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
+            grid-template-columns: 3fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            margin-bottom: 56px;
+            .footer-logo-wrapper {
+                position: relative;
+                a {
+                    position: relative;
+                    width: 124px;
+                    height: 33.33px;
+                    display: inline-block;
+                    max-width: 100%;
+                    text-decoration: none;
+                    color: white;
+                    background-color: transparent;
+                    @media (max-width: 478px) {
+                        font-size: 34px;
+                    }
+                    
+                }
+                .footer-socials {
+                    display: flex;
+                    margin-top: 1rem;
+                    @media (max-width: 478px) {
+                        margin-top: 3rem;
+                    }
+                    a {
+                        display: flex;
+                        width: 2rem;
+                        height: 2rem;
+                        margin-right: 1rem;
+                        padding: 0.25rem;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0.5rem;
+                        max-width: 100%;
+                        @media (max-width: 478px) {
+                            width: 3rem;
+                            height: 3rem;
+                        }
+                        img {
+                            max-width: 100%;
+                            vertical-align: middle;
+                            display: inline-block;
+                            background-color: white;
+                            border-radius: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-credits {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-size: 14px;
+                color: white;
+                margin-top: 0;
+                margin-bottom: 0;
+                line-height: 1.5;
+                letter-spacing: -.32px;
+                @media (max-width: 478px) {
+                    font-size: 24px;
+                }
+            }
+        }
+        
+    }
+}

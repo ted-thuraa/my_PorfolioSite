@@ -1,0 +1,130 @@
+.faq-service{
+    background-color: black;
+    .is-padding{
+        padding-top: 8em;
+        padding-bottom: 8em;
+        .container-column{
+            max-width: 100%;
+            .faq-main-wrapper{
+                padding-right: 160px;
+                padding-left: 160px;
+                @media (max-width: 478px) {
+                    padding: 0 75px;
+                }
+                .faq-headline-wrapper{
+                    margin-bottom: 2.5em;
+                    h2 {
+                        margin-top: 0;
+                        margin-bottom: 0;
+                        font-size: 80px;
+                        line-height: 90px;
+                        font-weight: 700;
+                        color: white;
+                        span {
+                            color: #554A4A;
+                            span {
+                                color: #DBF40C;
+                            }
+                        }
+                    }
+                }
+                .sub-headline-wrapper {
+                    .sub-headline-inner {
+                        margin-bottom: 2.5em;
+                        p {
+                            font-size: 1.2rem;
+                            font-weight: 300;
+                            color: white;
+                        }
+                    }
+                }
+                .faq-container {
+                    margin-bottom: 60px;
+                    .accordion-item {
+                        // height: 100%;
+                        overflow: hidden;
+                        width: 100%;
+                        margin-bottom: 10px;
+                        display: inline-block;
+                        position: relative;
+                        text-align: left;
+                        margin-left: auto;
+                        margin-right: auto;
+                        border-bottom: 1px solid white;
+                        .dropdown-toggle-text {
+                            display: flex;
+                            width: 100%;
+                            height: 80px;
+                            padding: 0 50px 0 1.5em;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 600;
+                            white-space: break-spaces;
+                            cursor: default;
+                            position: relative;
+                            vertical-align: top;
+                            text-decoration: none;position: relative;
+                            vertical-align: top;
+                            text-decoration: none;
+                            text-align: left;
+                            margin-left: auto;
+                            margin-right: auto;
+                            a {
+                                color: inherit;
+                                text-decoration: inherit;
+                                font-size: inherit;
+                                max-width: 100%;
+                                display: inline-block;
+                                width: 100%;
+                                .toggle-text {
+                                    position: relative;
+                                    font-size: 32px;
+                                    line-height: 1.375;
+                                    font-weight: 400;
+                                }
+                                .toggle-icon {
+                                    position: absolute;
+                                    left: auto;
+                                    top: 0;
+                                    right: 0;
+                                    bottom: 0;
+                                    width: 1.5rem;
+                                    height: 1.5rem;
+                                    margin-top: 1.5em;
+                                    margin-right: 1em;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        background-color: white;
+                                        width: 16px;
+                                        height: 4px;
+                                        transition: 0.1 ease-in-out;
+                                    }
+                                }
+                            }
+                        }
+                        .dropdown-body-open {
+                            position: relative;
+                            display: block;
+                            width: 100%;
+                            background-color: transparent;
+                            .dropdown-body-cont {
+                                padding: 2em;
+                                color: #fafafa;
+                                font-weight: 300;
+                                p {
+                                    font-size: 1.2rem;
+                                    font-weight: 300;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}

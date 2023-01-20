@@ -1,0 +1,127 @@
+$rotationDuration: 20s;
+$hoverDuration: 0.3s;
+
+$easeIn: cubic-bezier(0.32, 0, 0.67, 0);
+$easeOut: cubic-bezier(0.33, 1, 0.68, 1);
+
+$textColor: #D9D9D9;
+$bgColor: #A6B8B1;
+$accentColor: #E8D6C1;
+
+
+
+.banner {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 24px;
+    height: 100vh;
+    @media (max-width: 578px) {
+        justify-content: flex-start;
+        max-height: 960px;
+        height: 219vh;
+        display: block;
+        
+        
+        // flex-direction: column-reverse;
+        // text-align: center;
+        // -webkit-box-align: center;
+        // -webkit-box-orient: vertical;
+        // -webkit-box-direction: reverse;
+        
+    }
+    
+    .banner-right {
+        // position: relative;
+        // top: 150px;
+        // left: 80px;
+        // color: #D9D9D9;
+        // pointer-events: none;
+        // display: block;
+        width: 70%;
+        top: 2px;
+        position: relative;
+        @media (max-width: 577px) {
+            top: 406px;
+            width: 100%;
+            padding: 0 2px;
+            position: relative;
+        }
+        .banner-h1s {
+            margin: 0 60px;
+            width: 501px;
+            color: #D9D9D9;
+            @media (max-width: 577px) {
+                width: 100%;
+                position: relative;
+            }
+            h1 {
+                font-weight: 750;
+                font-size: 80px;
+                margin-bottom: 0px;
+                font-weight: 750;
+                width: 100%;
+                display: block;
+                @media (max-width: 578px) {
+                    line-height: 100px;
+                    font-size: 90px;
+                    font-weight: 500;
+                    position: relative;
+                }
+                .headline {
+                    margin: 0;
+                    height: 128px;
+                    overflow: hidden;
+                    width: 764px;
+                    @media (max-width: 578px) {
+                        position: relative;
+                    }
+                }
+            }
+        }
+        .rotating-link {
+            position: absolute;
+            top: 600px;
+            left: 68px;
+            .link {
+                display: inline-block;
+                width: 10rem;
+                height: 10rem;
+                text-transform: uppercase;
+                letter-spacing: 0.1175em;
+                word-spacing: 0.3em;
+            }
+
+            
+            
+        }
+        
+        
+    }
+    .banner-left {
+        position: relative;
+        top: 400px;
+        width: 60%;
+        height: 100vh;
+        @media (max-width: 478px) {
+            width: 100%;
+            height: 167vh;
+            top: -329px;
+        }
+        .image-gif {
+            position: absolute;
+            overflow: hidden;
+            height: 40%;
+            width: 75%;
+            bottom: 450px;
+            left: 90px;
+            img {
+                margin-right: -100px;
+                // position: relative;
+            }
+        }
+    }
+}

@@ -1,0 +1,121 @@
+.cta-section {
+    position: relative;
+    background-color: black;
+    .cta-container {
+        display: flex;
+        width: 90%;
+        height: 480px;
+        max-width: 1360px;
+        margin-right: auto;
+        margin-left: auto;
+        align-items: center;
+        @media (max-width: 478px) {
+            position: relative;
+            display: block;
+            height: 150vh;
+        }
+        .cta-wrapper {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @media (max-width: 478px) {
+                display: block;
+                padding: 0 55px;
+            }
+            h2 {
+                color: white;
+                margin-top: 16px;
+                margin-bottom: 24px;
+                font-size: 64px;
+                line-height: 72px;
+                font-weight: 500;
+                letter-spacing: -1.92px;
+                @media (max-width: 478px) {
+                    font-size: 56px;
+                    line-height: 85px;
+                }
+            }
+            p {
+                margin-bottom: 40px;
+                color: white;
+                letter-spacing: -.48px;
+                font-size: 24px;
+                margin-top: 0;
+                line-height: 1.5;
+                @media (max-width: 478px) {
+                    text-align: center;
+                }
+            }
+            .buttons-wrapper {
+                display: flex;
+                @media (max-width: 478px) {
+                    display: block;
+                    padding: 0 149px;
+                }
+                .wt-bg {
+                    margin-right: 24px;
+                    background-color: #D4FD00;
+                    color: black;
+                    padding: 16px 32px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: .8px;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    text-decoration: none;
+                    cursor: pointer;
+                    text-align: center;
+                    @media (max-width: 478px) {
+                        width: 100%;
+                        margin-bottom: 25px;
+                        padding: 32px 32px;
+                        font-size: 26px;
+                    }
+                }
+                .blck-bg{
+                    margin-right: 24px;
+                    background-color: black;
+                    border: 2px solid white;
+                    border-color: white;
+                    color: white;
+                    padding: 16px 32px;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    letter-spacing: .8px;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    text-decoration: none;
+                    cursor: pointer;
+                    text-align: center;
+                    @media (max-width: 478px) {
+                        width: 100%;
+                        padding: 32px 32px;
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .cta-image {
+            position: absolute;
+            left: 55%;
+            width: 100%;
+            @media (max-width: 478px) {
+                left: 0;
+                position: relative;
+                top: 85px;
+            }
+            img {
+                max-width: 100%;
+                width: 600px;
+                vertical-align: middle;
+                display: inline-block;
+                @media (max-width: 478px) {
+                    width: 766px;
+                }
+            }
+        }
+    }
+}

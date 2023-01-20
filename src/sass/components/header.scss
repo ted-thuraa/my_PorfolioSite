@@ -1,0 +1,101 @@
+.headerNav {
+  height: 0px;
+  width: 100%;
+  position: relative;
+  background-color: black;
+  top: 20px;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  @media (max-width: 471px) {
+    height: 80px;
+  }
+    .container {
+      flex-grow: 1;
+      margin: 0 auto;
+      padding: 18px 32px;
+      width: auto;
+      height: 100%;
+      @media (min-width: 471px) {
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+      }
+      
+      .container-Flex {
+        position: relative;
+        display: flex;
+        align-items: center;
+        // justify-content: space-between;
+        .logo {
+          a {
+            font-size:  1.8rem;
+            font-weight: 800;
+            color: white;
+            @media (max-width: 991px) {
+              font-size: 3.5rem;
+            }
+          }
+          
+        }
+        .nav-links {
+          padding-left: 310px;
+          @media (max-width: 991px) {
+            display: none;
+          }
+          ul {
+            list-style: none;
+            li {
+              display: inline;
+              a {
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-weight: 500;
+                letter-spacing: .28px;
+                text-transform: uppercase;
+              }
+            }
+          }
+        }
+        .contact {
+          padding-left: 1100px;
+          position: fixed;
+          @media (max-width: 991px) {
+            padding-left: 530px;
+            top: 35px;
+          }
+          a {
+            text-decoration: none;
+            button {
+              transform-origin: centre;
+              border: none;
+              outline: none;
+              background: #DBF40C;
+              height: 50px;
+              width: 155px;
+              border-radius: 14px;
+              @media (max-width: 479px) {
+                height: 76px;
+                width: 190px;
+                border-radius: 14px;
+              }
+              span {
+                margin: 8px;
+                color: #061425;
+                font-size: 16px;
+                font-weight: 700;
+                letter-spacing: .8px;
+                text-transform: uppercase;
+              }
+            }
+          }
+          
+        }
+       
+      }
+      
+    }
+  }
+  

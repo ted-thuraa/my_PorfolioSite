@@ -1,0 +1,81 @@
+.about {
+    width: 100%;
+    // min-width: 1440px;
+    position: relative;
+    margin: 0 auto;
+    background-color: black;
+    @media (max-width: 478px) {
+        top: 110px;
+    }
+    .about-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        @media (max-width: 478px) {
+            display: block;
+            height: 214vh;
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .about-img {
+            width: 50%;
+            height: 100vh;
+            position: relative;
+            margin-top: 128px;
+            padding-left: 20px;
+            margin-right: 10px;
+            @media (max-width: 478px) {
+                width: 100%;
+            }
+            .photo-img {
+                position: absolute;
+                margin-top: 84px;
+                @media (max-width: 478px) {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: flex-start;
+                }
+                img {
+                    height: 100%;
+                    width: 90%;
+                }
+            }
+        }
+        .about-content {
+            width: 50%;
+            @media (max-width: 478px) {
+                width: 100%;
+                padding: 50px 15px;
+                // text-align: center;
+            }
+            p {
+                color: #D9D9D9;
+                line-height: 1.2;
+                font-size: 40px;
+                font-weight: 400;
+                text-align: left;
+                padding-right: 50px;
+                @media (max-width: 478px) {
+                    text-align: center;
+                    font-size: 50px;
+                    padding-right: 0px;
+                }
+                span {
+                    color: #554A4A;
+                    font-size: 64px;
+                    font-weight: 500;
+                    @media (max-width: 478px) {
+                        margin-bottom: 0;
+                        font-size: 80px;
+                        line-height: 150%;
+                    }
+                    span {
+                        color: #DBF40C;
+                    }
+                }
+            }
+        }
+    }
+}
